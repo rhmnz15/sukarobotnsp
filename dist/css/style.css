@@ -1,0 +1,320 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.navbar.scrolling-active {
+    background-color: #EF8518;
+    padding: 15px 0 15px 0;
+
+}
+
+.navbar i {
+    color: white;
+}
+
+.navbar i:hover {
+    color: #38B6FF;
+    cursor: pointer;
+}
+
+
+
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/img/hero1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero h1 {
+    --animate-delay: 0.7s;
+}
+
+.hero button {
+    --animate-delay: 1.7s;
+}
+
+.about .row .col:nth-child(1) {
+    background-color: #EF8518;
+
+}
+
+.btn-primary {
+    background-color: #38B6FF;
+}
+
+.bg-primary {
+    background-color: #38B6FF;
+}
+
+.btn-danger {
+    background-color: #38B6FF;
+}
+
+.btn-danger:hover {
+    background-color: #38B6FF;
+}
+
+.projects {
+    padding: 100px 0 100px 0;
+
+}
+
+.projects img {
+    height: 250px;
+}
+
+.galery img {
+    height: 330px;
+}
+
+.service img {
+    width: 250px;
+    height: 400px;
+}
+
+.service h5 {
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.service i {
+    color: green;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .service img {
+        width: 220px;
+    }
+
+    .slick-slide {
+        margin: 0 50px;
+    }
+
+    .slick-slide img {
+        width: 80px;
+    }
+
+    .event-card {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .service h5 {
+        font-size: 16px;
+    }
+
+    .event-card {
+        width: 25rem;
+    }
+
+}
+
+.faq {
+    padding-top: 100px;
+}
+
+.faq .accordion {
+    --bs-accordion-bg: #EF8518;
+}
+
+.faq .accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+.footer {
+    min-height: 80vh;
+    background-color: #15181f;
+    margin-top: 150px
+}
+
+.footer .copyright {
+    padding-top: 200px;
+}
+
+.bg-primaryy {
+    background-color: #38B6FF;
+}
+
+/* Bagian Our Patner */
+.slick-slide {
+    margin: 0 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.copy {
+    padding-top: 50px;
+}
+
+
+.testimonial-container {
+    background-color: #38B6FF;
+    color: #fff;
+    border-radius: 15px;
+    margin-right: 20px;
+    padding: 50px 80px;
+    max-width: 400px;
+    position: relative;
+}
+
+.fa-quote {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 28px;
+    position: absolute;
+    top: 70px;
+}
+
+.fa-quote-right {
+    left: 40px;
+}
+
+.fa-quote-left {
+    right: 40px;
+}
+
+.testimonial {
+    line-height: 28px;
+    text-align: justify;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user .user-image {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+}
+
+.user .user-details {
+    margin-left: 10px;
+}
+
+.user .username {
+    margin: 0;
+}
+
+.user .role {
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+.progress-bar {
+    background-color: #fff;
+    height: 6px;
+    border-radius: 50%;
+    width: 100%;
+    margin: 15px;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0);
+    }
+}
+
+
+@media(max-width: 768px) {
+    .testimonial-container {
+        padding: 20px 30px;
+    }
+
+    .fa-quote {
+        visibility: hidden;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .event-card {
+        width: 25rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .event-card {
+        width: 25rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .event-card {
+        width: 25rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .event-card {
+        width: 25rem;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .event-card {
+        width: 25rem;
+    }
+}
